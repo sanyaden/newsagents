@@ -61,8 +61,6 @@ NewsAgents - це мультиагентна система для збору, �
    ```
    OPENAI_API_KEY=ваш_ключ_openai
    TAVILY_API_KEY=ваш_ключ_tavily
-   SCRAPINGBEE_API_KEY=ваш_ключ_scrapingbee
-   UCRAWLER_API_KEY=ваш_ключ_ucrawler
    ```
 
 ## Використання
@@ -98,7 +96,6 @@ python main.py --async
 - Доступ до API:
   - OpenAI API
   - Tavily API
-  - Опціонально: ScrapingBee API або uCrawler API (для кращого скрапінгу)
 
 ## Останні покращення
 

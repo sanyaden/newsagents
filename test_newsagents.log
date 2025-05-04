@@ -1,0 +1,597 @@
+2025-05-04 08:50:43,952 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 09:14:48,263 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 09:14:48,307 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 09:14:48,325 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 09:14:48,326 - newsagents - DEBUG - Агент CrawlerAgent - fetch_rss - Отримання новин з 1 RSS-каналів [started]
+2025-05-04 09:14:48,362 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 09:14:48,362 - newsagents - DEBUG - Агент SummarizerAgent - summarize - Узагальнення тексту (188 символів) [started]
+2025-05-04 09:14:48,363 - newsagents.summarizer_agent - DEBUG - Текст розділено на 1 частин
+2025-05-04 09:14:48,366 - newsagents.summarizer_agent - ERROR - Помилка при узагальненні тексту: unsupported format string passed to MagicMock.__format__
+2025-05-04 09:14:48,380 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 09:14:48,380 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 09:14:48,380 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 09:14:48,380 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_api - Переклад тексту (16 символів) на uk [started]
+2025-05-04 09:14:48,380 - newsagents - INFO - Агент TranslatorAgent - translate_with_api - Переклад успішно виконано [completed]
+2025-05-04 09:14:48,393 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 09:14:48,393 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 09:14:48,393 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 09:14:48,393 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_llm - Переклад тексту через LLM (28 символів) на uk [started]
+2025-05-04 09:14:48,395 - newsagents.translator_agent - ERROR - Помилка перекладу через LLM: unsupported format string passed to MagicMock.__format__
+2025-05-04 09:14:48,395 - newsagents - ERROR - Агент TranslatorAgent - translate_with_llm - Помилка: unsupported format string passed to MagicMock.__format__ [error]
+2025-05-04 09:14:48,399 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 09:14:48,410 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 09:14:48,422 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 09:14:48,422 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 09:14:48,422 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 09:14:48,434 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 09:14:48,456 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 09:14:48,457 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 09:14:48,458 - newsagents - DEBUG - Агент AINewsSystem - arun - Запуск асинхронного процесу збору та обробки новин [started]
+2025-05-04 09:14:48,458 - newsagents.ainews_system - INFO - Запуск асинхронного процесу збору та обробки новин
+2025-05-04 09:14:48,458 - newsagents.ainews_system - INFO - Крок 1: Асинхронний збір новин з RSS
+2025-05-04 09:14:48,458 - newsagents.ainews_system - INFO - Крок 2: Асинхронний збір новин через LLM за запитами (1 запитів)
+2025-05-04 09:14:48,458 - newsagents.ainews_system - DEBUG - Запит LLM 1: Останні новини про штучний інтелект
+2025-05-04 09:14:48,458 - newsagents.ainews_system - INFO - Крок 3: Асинхронний скрапінг 1 веб-сайтів
+2025-05-04 09:14:48,458 - newsagents.ainews_system - DEBUG - Запуск 3 паралельних задач для збору новин
+2025-05-04 09:14:48,889 - newsagents.ainews_system - INFO - Асинхронно зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 09:14:48,889 - newsagents.ainews_system - INFO - Кроки 4-7: Паралельна обробка статей (переклад, узагальнення, тональність, категоризація)
+2025-05-04 09:14:48,890 - newsagents - DEBUG - Агент CategorizerAgent - arun - Асинхронна категоризація 2 статей [started]
+2025-05-04 09:14:48,890 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_llm_async - Асинхронна категоризація статті: Тестові новини про ШІ [started]
+2025-05-04 09:14:49,075 - newsagents.categorizer_agent - ERROR - Помилка асинхронної категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 09:14:49,075 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_keywords - Категоризація за ключовими словами [started]
+2025-05-04 09:14:49,075 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_llm_async - Асинхронна категоризація статті: Тестові новини про науку про дані [started]
+2025-05-04 09:14:49,253 - newsagents.categorizer_agent - ERROR - Помилка асинхронної категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 09:14:49,253 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_keywords - Категоризація за ключовими словами [started]
+2025-05-04 09:14:49,253 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: AI та машинне навчання, Тональність: нейтральна)
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO - ---
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO - ---
+2025-05-04 09:14:49,254 - newsagents.ainews_system - INFO - Асинхронний процес завершено за 0.80 секунд
+2025-05-04 09:14:49,260 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 09:14:49,272 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 09:14:49,283 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 09:14:49,283 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 09:14:49,283 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 09:14:49,294 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 09:14:49,315 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 09:14:49,316 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 09:14:49,317 - newsagents - DEBUG - Агент AINewsSystem - run - Запуск процесу збору та обробки новин [started]
+2025-05-04 09:14:49,317 - newsagents.ainews_system - INFO - Запуск синхронного процесу збору та обробки новин
+2025-05-04 09:14:49,317 - newsagents.ainews_system - INFO - Крок 1: Збір новин з RSS
+2025-05-04 09:14:49,317 - newsagents.ainews_system - INFO - Крок 2: Збір новин через LLM за запитами (1 запитів)
+2025-05-04 09:14:49,317 - newsagents.ainews_system - DEBUG - Запит LLM: Останні новини про штучний інтелект
+2025-05-04 09:14:49,517 - newsagents.ainews_system - INFO - Крок 3: Скрапінг 1 веб-сайтів
+2025-05-04 09:14:49,518 - newsagents.ainews_system - INFO - Зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 09:14:49,518 - newsagents.ainews_system - INFO - Крок 4: Переклад статей
+2025-05-04 09:14:49,518 - newsagents.ainews_system - INFO - Крок 5: Створення коротких описів
+2025-05-04 09:14:49,518 - newsagents.ainews_system - INFO - Крок 6: Аналіз тональності
+2025-05-04 09:14:49,518 - newsagents.ainews_system - INFO - Крок 7: Категоризація статей
+2025-05-04 09:14:49,518 - newsagents - DEBUG - Агент CategorizerAgent - run - Категоризація 2 статей [started]
+2025-05-04 09:14:49,518 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_llm - Категоризація статті: Тестові новини про ШІ [started]
+2025-05-04 09:14:49,709 - newsagents.categorizer_agent - ERROR - Помилка категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 09:14:49,710 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_keywords - Категоризація за ключовими словами [started]
+2025-05-04 09:14:49,710 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_llm - Категоризація статті: Тестові новини про науку про дані [started]
+2025-05-04 09:14:49,874 - newsagents.categorizer_agent - ERROR - Помилка категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 09:14:49,874 - newsagents - DEBUG - Агент CategorizerAgent - categorize_with_keywords - Категоризація за ключовими словами [started]
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: AI та машинне навчання, Тональність: нейтральна)
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - ---
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - ---
+2025-05-04 09:14:49,875 - newsagents.ainews_system - INFO - Процес завершено за 0.56 секунд
+2025-05-04 10:19:26,117 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 10:19:26,153 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:19:26,172 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:19:26,172 - newsagents - DEBUG - Агент CrawlerAgent - fetch_rss - Отримання новин з 1 RSS-каналів [started]
+2025-05-04 10:19:26,185 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних test_articles.db
+2025-05-04 10:19:26,185 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:19:26,186 - newsagents.storage_agent - INFO - Збережено 1 нових статей, пропущено 0 існуючих статей
+2025-05-04 10:19:26,198 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:19:26,198 - newsagents - DEBUG - Агент SummarizerAgent - summarize - Узагальнення тексту (188 символів) [started]
+2025-05-04 10:19:26,198 - newsagents.summarizer_agent - DEBUG - Текст розділено на 1 частин
+2025-05-04 10:19:26,198 - newsagents.summarizer_agent - DEBUG - Обробка частини 1/1
+2025-05-04 10:19:26,200 - newsagents.summarizer_agent - DEBUG - Не вдалося залогувати використання токенів: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:19:26,201 - newsagents - INFO - Агент SummarizerAgent - summarize - Узагальнення успішно виконано [completed]
+2025-05-04 10:19:26,212 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:19:26,212 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:19:26,212 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:19:26,212 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_api - Переклад тексту (16 символів) на uk [started]
+2025-05-04 10:19:26,212 - newsagents - INFO - Агент TranslatorAgent - translate_with_api - Переклад успішно виконано [completed]
+2025-05-04 10:19:26,225 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:19:26,225 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:19:26,225 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:19:26,226 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_llm - Переклад тексту через LLM (28 символів) на uk [started]
+2025-05-04 10:19:26,227 - newsagents.translator_agent - ERROR - Помилка перекладу через LLM: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:19:26,227 - newsagents - ERROR - Агент TranslatorAgent - translate_with_llm - Помилка: unsupported format string passed to MagicMock.__format__ [error]
+2025-05-04 10:19:26,231 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:19:26,243 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:19:26,254 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:19:26,254 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:19:26,254 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:19:26,268 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:19:26,290 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:19:26,290 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpuc0nmuxq.db
+2025-05-04 10:19:26,291 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:19:26,291 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:19:26,292 - newsagents - DEBUG - Агент AINewsSystem - arun - Запуск асинхронного процесу збору та обробки новин [started]
+2025-05-04 10:19:26,292 - newsagents.ainews_system - INFO - Запуск асинхронного процесу збору та обробки новин
+2025-05-04 10:19:26,292 - newsagents.ainews_system - INFO - Крок 1: Асинхронний збір новин з RSS
+2025-05-04 10:19:26,292 - newsagents.ainews_system - INFO - Крок 2: Асинхронний збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:19:26,292 - newsagents.ainews_system - DEBUG - Запит LLM 1: Останні новини про штучний інтелект
+2025-05-04 10:19:26,292 - newsagents.ainews_system - INFO - Крок 3: Асинхронний скрапінг 1 веб-сайтів
+2025-05-04 10:19:26,292 - newsagents.ainews_system - DEBUG - Запуск 3 паралельних задач для збору новин
+2025-05-04 10:19:26,597 - newsagents.ainews_system - INFO - Асинхронно зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:19:26,597 - newsagents.ainews_system - INFO - Кроки 4-7: Паралельна обробка статей (переклад, узагальнення, тональність, категоризація)
+2025-05-04 10:19:26,597 - newsagents - DEBUG - Агент CategorizerAgent - arun - Асинхронна категоризація 2 статей [started]
+2025-05-04 10:19:26,597 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:19:26,792 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:19:26,792 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:19:26,792 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:19:26,967 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:19:26,967 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:19:26,967 - newsagents - INFO - Агент CategorizerAgent - arun - Асинхронно категоризовано 2 статей за 0.37 секунд [completed]
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:19:26,967 - newsagents.ainews_system - INFO - Асинхронний процес завершено за 0.68 секунд
+2025-05-04 10:19:26,968 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4972976112'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4972979472'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4972980144'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:19:26,968 - newsagents - INFO - Агент AINewsSystem - arun - Асинхронний процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:19:26,970 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:19:26,984 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:19:26,995 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:19:26,995 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:19:26,995 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:19:27,006 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:19:27,028 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:19:27,028 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpb5n6jxb9.db
+2025-05-04 10:19:27,029 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:19:27,029 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:19:27,030 - newsagents - DEBUG - Агент AINewsSystem - run - Запуск процесу збору та обробки новин [started]
+2025-05-04 10:19:27,030 - newsagents.ainews_system - INFO - Запуск синхронного процесу збору та обробки новин
+2025-05-04 10:19:27,030 - newsagents.ainews_system - INFO - Крок 1: Збір новин з RSS
+2025-05-04 10:19:27,030 - newsagents.ainews_system - INFO - Крок 2: Збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:19:27,030 - newsagents.ainews_system - DEBUG - Запит LLM: Останні новини про штучний інтелект
+2025-05-04 10:19:27,220 - newsagents.ainews_system - INFO - Крок 3: Скрапінг 1 веб-сайтів
+2025-05-04 10:19:27,220 - newsagents.ainews_system - INFO - Зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:19:27,220 - newsagents.ainews_system - INFO - Крок 4: Переклад статей
+2025-05-04 10:19:27,220 - newsagents.ainews_system - INFO - Крок 5: Створення коротких описів
+2025-05-04 10:19:27,220 - newsagents.ainews_system - INFO - Крок 6: Аналіз тональності
+2025-05-04 10:19:27,220 - newsagents.ainews_system - INFO - Крок 7: Категоризація статей
+2025-05-04 10:19:27,220 - newsagents - DEBUG - Агент CategorizerAgent - run - Категоризація 2 статей [started]
+2025-05-04 10:19:27,220 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:19:27,432 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:19:27,432 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:19:27,432 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:19:27,592 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:19:27,592 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:19:27,592 - newsagents - INFO - Агент CategorizerAgent - run - Категоризовано 2 статей за 0.37 секунд [completed]
+2025-05-04 10:19:27,592 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:19:27,592 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:19:27,592 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:19:27,593 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:19:27,593 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:19:27,593 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:19:27,593 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:19:27,593 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:19:27,593 - newsagents.ainews_system - INFO - Процес завершено за 0.56 секунд
+2025-05-04 10:19:27,594 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4972976112'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4972979472'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4972980144'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:19:27,594 - newsagents - INFO - Агент AINewsSystem - run - Процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:20:14,110 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 10:20:14,145 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:14,158 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:14,158 - newsagents - DEBUG - Агент CrawlerAgent - fetch_rss - Отримання новин з 1 RSS-каналів [started]
+2025-05-04 10:20:14,171 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних test_articles.db
+2025-05-04 10:20:14,172 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:20:14,172 - newsagents.storage_agent - INFO - Збережено 1 нових статей, пропущено 0 існуючих статей
+2025-05-04 10:20:14,185 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:14,185 - newsagents - DEBUG - Агент SummarizerAgent - summarize - Узагальнення тексту (188 символів) [started]
+2025-05-04 10:20:14,185 - newsagents.summarizer_agent - DEBUG - Текст розділено на 1 частин
+2025-05-04 10:20:14,186 - newsagents.summarizer_agent - DEBUG - Обробка частини 1/1
+2025-05-04 10:20:14,188 - newsagents.summarizer_agent - DEBUG - Не вдалося залогувати використання токенів: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:20:14,188 - newsagents - INFO - Агент SummarizerAgent - summarize - Узагальнення успішно виконано [completed]
+2025-05-04 10:20:14,200 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:14,200 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:14,200 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:14,200 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_api - Переклад тексту (16 символів) на uk [started]
+2025-05-04 10:20:14,200 - newsagents - INFO - Агент TranslatorAgent - translate_with_api - Переклад успішно виконано [completed]
+2025-05-04 10:20:14,213 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:14,213 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:14,213 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:14,213 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_llm - Переклад тексту через LLM (28 символів) на uk [started]
+2025-05-04 10:20:14,214 - newsagents.translator_agent - ERROR - Помилка перекладу через LLM: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:20:14,214 - newsagents - ERROR - Агент TranslatorAgent - translate_with_llm - Помилка: unsupported format string passed to MagicMock.__format__ [error]
+2025-05-04 10:20:14,217 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:20:14,228 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:14,239 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:14,239 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:14,239 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:14,251 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:14,274 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:14,275 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpnr2kpfv3.db
+2025-05-04 10:20:14,276 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:20:14,276 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:20:14,277 - newsagents - DEBUG - Агент AINewsSystem - arun - Запуск асинхронного процесу збору та обробки новин [started]
+2025-05-04 10:20:14,277 - newsagents.ainews_system - INFO - Запуск асинхронного процесу збору та обробки новин
+2025-05-04 10:20:14,277 - newsagents.ainews_system - INFO - Крок 1: Асинхронний збір новин з RSS
+2025-05-04 10:20:14,277 - newsagents.ainews_system - INFO - Крок 2: Асинхронний збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:20:14,277 - newsagents.ainews_system - DEBUG - Запит LLM 1: Останні новини про штучний інтелект
+2025-05-04 10:20:14,277 - newsagents.ainews_system - INFO - Крок 3: Асинхронний скрапінг 1 веб-сайтів
+2025-05-04 10:20:14,277 - newsagents.ainews_system - DEBUG - Запуск 3 паралельних задач для збору новин
+2025-05-04 10:20:14,540 - newsagents.ainews_system - INFO - Асинхронно зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:20:14,540 - newsagents.ainews_system - INFO - Кроки 4-7: Паралельна обробка статей (переклад, узагальнення, тональність, категоризація)
+2025-05-04 10:20:14,541 - newsagents - DEBUG - Агент CategorizerAgent - arun - Асинхронна категоризація 2 статей [started]
+2025-05-04 10:20:14,541 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:20:14,746 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:14,746 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:14,747 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:20:14,919 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:14,919 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:14,919 - newsagents - INFO - Агент CategorizerAgent - arun - Асинхронно категоризовано 2 статей за 0.38 секунд [completed]
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:14,919 - newsagents.ainews_system - INFO - Асинхронний процес завершено за 0.64 секунд
+2025-05-04 10:20:14,919 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4401516896'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4401520256'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4401520928'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:20:14,920 - newsagents - INFO - Агент AINewsSystem - arun - Асинхронний процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:20:14,921 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:20:14,933 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:14,946 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:14,947 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:14,947 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:14,958 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:14,980 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:14,981 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmp5thrdd72.db
+2025-05-04 10:20:14,981 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:20:14,981 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:20:14,982 - newsagents - DEBUG - Агент AINewsSystem - run - Запуск процесу збору та обробки новин [started]
+2025-05-04 10:20:14,982 - newsagents.ainews_system - INFO - Запуск синхронного процесу збору та обробки новин
+2025-05-04 10:20:14,982 - newsagents.ainews_system - INFO - Крок 1: Збір новин з RSS
+2025-05-04 10:20:14,982 - newsagents.ainews_system - INFO - Крок 2: Збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:20:14,982 - newsagents.ainews_system - DEBUG - Запит LLM: Останні новини про штучний інтелект
+2025-05-04 10:20:15,201 - newsagents.ainews_system - INFO - Крок 3: Скрапінг 1 веб-сайтів
+2025-05-04 10:20:15,201 - newsagents.ainews_system - INFO - Зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:20:15,201 - newsagents.ainews_system - INFO - Крок 4: Переклад статей
+2025-05-04 10:20:15,201 - newsagents.ainews_system - INFO - Крок 5: Створення коротких описів
+2025-05-04 10:20:15,201 - newsagents.ainews_system - INFO - Крок 6: Аналіз тональності
+2025-05-04 10:20:15,201 - newsagents.ainews_system - INFO - Крок 7: Категоризація статей
+2025-05-04 10:20:15,201 - newsagents - DEBUG - Агент CategorizerAgent - run - Категоризація 2 статей [started]
+2025-05-04 10:20:15,201 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:20:15,397 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:15,397 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:15,398 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:20:15,567 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:15,567 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:15,567 - newsagents - INFO - Агент CategorizerAgent - run - Категоризовано 2 статей за 0.37 секунд [completed]
+2025-05-04 10:20:15,567 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:15,568 - newsagents.ainews_system - INFO - Процес завершено за 0.59 секунд
+2025-05-04 10:20:15,568 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4401516896'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4401520256'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4401520928'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:20:15,568 - newsagents - INFO - Агент AINewsSystem - run - Процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:20:37,482 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 10:20:37,515 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:37,528 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:37,528 - newsagents - DEBUG - Агент CrawlerAgent - fetch_rss - Отримання новин з 1 RSS-каналів [started]
+2025-05-04 10:20:37,542 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних test_articles.db
+2025-05-04 10:20:37,543 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:20:37,543 - newsagents.storage_agent - INFO - Збережено 1 нових статей, пропущено 0 існуючих статей
+2025-05-04 10:20:37,555 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:37,555 - newsagents - DEBUG - Агент SummarizerAgent - summarize - Узагальнення тексту (188 символів) [started]
+2025-05-04 10:20:37,555 - newsagents.summarizer_agent - DEBUG - Текст розділено на 1 частин
+2025-05-04 10:20:37,555 - newsagents.summarizer_agent - DEBUG - Обробка частини 1/1
+2025-05-04 10:20:37,558 - newsagents.summarizer_agent - DEBUG - Не вдалося залогувати використання токенів: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:20:37,558 - newsagents - INFO - Агент SummarizerAgent - summarize - Узагальнення успішно виконано [completed]
+2025-05-04 10:20:37,569 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:37,569 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:37,569 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:37,569 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_api - Переклад тексту (16 символів) на uk [started]
+2025-05-04 10:20:37,569 - newsagents - INFO - Агент TranslatorAgent - translate_with_api - Переклад успішно виконано [completed]
+2025-05-04 10:20:37,582 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:37,582 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:37,582 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:37,582 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_llm - Переклад тексту через LLM (28 символів) на uk [started]
+2025-05-04 10:20:37,584 - newsagents.translator_agent - ERROR - Помилка перекладу через LLM: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:20:37,584 - newsagents - ERROR - Агент TranslatorAgent - translate_with_llm - Помилка: unsupported format string passed to MagicMock.__format__ [error]
+2025-05-04 10:20:37,586 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:20:37,597 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:37,608 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:37,608 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:37,608 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:37,620 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:37,643 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:37,643 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpsbcb9cf3.db
+2025-05-04 10:20:37,644 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:20:37,644 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:20:37,645 - newsagents - DEBUG - Агент AINewsSystem - arun - Запуск асинхронного процесу збору та обробки новин [started]
+2025-05-04 10:20:37,645 - newsagents.ainews_system - INFO - Запуск асинхронного процесу збору та обробки новин
+2025-05-04 10:20:37,645 - newsagents.ainews_system - INFO - Крок 1: Асинхронний збір новин з RSS
+2025-05-04 10:20:37,645 - newsagents.ainews_system - INFO - Крок 2: Асинхронний збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:20:37,645 - newsagents.ainews_system - DEBUG - Запит LLM 1: Останні новини про штучний інтелект
+2025-05-04 10:20:37,645 - newsagents.ainews_system - INFO - Крок 3: Асинхронний скрапінг 1 веб-сайтів
+2025-05-04 10:20:37,645 - newsagents.ainews_system - DEBUG - Запуск 3 паралельних задач для збору новин
+2025-05-04 10:20:37,937 - newsagents.ainews_system - INFO - Асинхронно зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:20:37,937 - newsagents.ainews_system - INFO - Кроки 4-7: Паралельна обробка статей (переклад, узагальнення, тональність, категоризація)
+2025-05-04 10:20:37,937 - newsagents - DEBUG - Агент CategorizerAgent - arun - Асинхронна категоризація 2 статей [started]
+2025-05-04 10:20:37,937 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:20:38,150 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:38,150 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:38,150 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:20:38,338 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:38,338 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:38,338 - newsagents - INFO - Агент CategorizerAgent - arun - Асинхронно категоризовано 2 статей за 0.40 секунд [completed]
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:38,338 - newsagents.ainews_system - INFO - Асинхронний процес завершено за 0.69 секунд
+2025-05-04 10:20:38,339 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4420407648'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4420411008'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4420411680'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:20:38,339 - newsagents - INFO - Агент AINewsSystem - arun - Асинхронний процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:20:38,340 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:20:38,351 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:20:38,363 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:20:38,363 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:20:38,363 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:20:38,377 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:38,399 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:20:38,400 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpbdwaj29o.db
+2025-05-04 10:20:38,401 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:20:38,402 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:20:38,402 - newsagents - DEBUG - Агент AINewsSystem - run - Запуск процесу збору та обробки новин [started]
+2025-05-04 10:20:38,402 - newsagents.ainews_system - INFO - Запуск синхронного процесу збору та обробки новин
+2025-05-04 10:20:38,402 - newsagents.ainews_system - INFO - Крок 1: Збір новин з RSS
+2025-05-04 10:20:38,402 - newsagents.ainews_system - INFO - Крок 2: Збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:20:38,402 - newsagents.ainews_system - DEBUG - Запит LLM: Останні новини про штучний інтелект
+2025-05-04 10:20:38,624 - newsagents.ainews_system - INFO - Крок 3: Скрапінг 1 веб-сайтів
+2025-05-04 10:20:38,624 - newsagents.ainews_system - INFO - Зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:20:38,624 - newsagents.ainews_system - INFO - Крок 4: Переклад статей
+2025-05-04 10:20:38,624 - newsagents.ainews_system - INFO - Крок 5: Створення коротких описів
+2025-05-04 10:20:38,624 - newsagents.ainews_system - INFO - Крок 6: Аналіз тональності
+2025-05-04 10:20:38,624 - newsagents.ainews_system - INFO - Крок 7: Категоризація статей
+2025-05-04 10:20:38,624 - newsagents - DEBUG - Агент CategorizerAgent - run - Категоризація 2 статей [started]
+2025-05-04 10:20:38,624 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:20:38,861 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:38,861 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:38,861 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:20:39,032 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:20:39,032 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:20:39,032 - newsagents - INFO - Агент CategorizerAgent - run - Категоризовано 2 статей за 0.41 секунд [completed]
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:20:39,032 - newsagents.ainews_system - INFO - Процес завершено за 0.63 секунд
+2025-05-04 10:20:39,032 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4420407648'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4420411008'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4420411680'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:20:39,033 - newsagents - INFO - Агент AINewsSystem - run - Процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:21:15,261 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 10:21:15,297 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:15,311 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:15,311 - newsagents - DEBUG - Агент CrawlerAgent - fetch_rss - Отримання новин з 1 RSS-каналів [started]
+2025-05-04 10:21:15,326 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних test_articles.db
+2025-05-04 10:21:15,327 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:21:15,328 - newsagents.storage_agent - INFO - Збережено 1 нових статей, пропущено 0 існуючих статей
+2025-05-04 10:21:15,339 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:15,339 - newsagents - DEBUG - Агент SummarizerAgent - summarize - Узагальнення тексту (188 символів) [started]
+2025-05-04 10:21:15,340 - newsagents.summarizer_agent - DEBUG - Текст розділено на 1 частин
+2025-05-04 10:21:15,340 - newsagents.summarizer_agent - DEBUG - Обробка частини 1/1
+2025-05-04 10:21:15,342 - newsagents.summarizer_agent - DEBUG - Не вдалося залогувати використання токенів: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:21:15,342 - newsagents - INFO - Агент SummarizerAgent - summarize - Узагальнення успішно виконано [completed]
+2025-05-04 10:21:15,354 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:15,354 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:15,354 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:15,354 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_api - Переклад тексту (16 символів) на uk [started]
+2025-05-04 10:21:15,354 - newsagents - INFO - Агент TranslatorAgent - translate_with_api - Переклад успішно виконано [completed]
+2025-05-04 10:21:15,365 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:15,365 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:15,365 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:15,366 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_llm - Переклад тексту через LLM (28 символів) на uk [started]
+2025-05-04 10:21:15,367 - newsagents.translator_agent - ERROR - Помилка перекладу через LLM: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:21:15,367 - newsagents - ERROR - Агент TranslatorAgent - translate_with_llm - Помилка: unsupported format string passed to MagicMock.__format__ [error]
+2025-05-04 10:21:15,370 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:21:15,382 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:15,394 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:15,394 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:15,394 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:15,405 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:15,428 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:15,428 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmp3dkfg95b.db
+2025-05-04 10:21:15,429 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:21:15,429 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:21:15,430 - newsagents - DEBUG - Агент AINewsSystem - arun - Запуск асинхронного процесу збору та обробки новин [started]
+2025-05-04 10:21:15,430 - newsagents.ainews_system - INFO - Запуск асинхронного процесу збору та обробки новин
+2025-05-04 10:21:15,430 - newsagents.ainews_system - INFO - Крок 1: Асинхронний збір новин з RSS
+2025-05-04 10:21:15,430 - newsagents.ainews_system - INFO - Крок 2: Асинхронний збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:21:15,430 - newsagents.ainews_system - DEBUG - Запит LLM 1: Останні новини про штучний інтелект
+2025-05-04 10:21:15,430 - newsagents.ainews_system - INFO - Крок 3: Асинхронний скрапінг 1 веб-сайтів
+2025-05-04 10:21:15,430 - newsagents.ainews_system - DEBUG - Запуск 3 паралельних задач для збору новин
+2025-05-04 10:21:15,791 - newsagents.ainews_system - INFO - Асинхронно зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:21:15,791 - newsagents.ainews_system - INFO - Кроки 4-7: Паралельна обробка статей (переклад, узагальнення, тональність, категоризація)
+2025-05-04 10:21:15,791 - newsagents - DEBUG - Агент CategorizerAgent - arun - Асинхронна категоризація 2 статей [started]
+2025-05-04 10:21:15,791 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:21:16,092 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:16,092 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:16,092 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:21:16,260 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:16,260 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:16,260 - newsagents - INFO - Агент CategorizerAgent - arun - Асинхронно категоризовано 2 статей за 0.47 секунд [completed]
+2025-05-04 10:21:16,260 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:21:16,260 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:16,261 - newsagents.ainews_system - INFO - Асинхронний процес завершено за 0.83 секунд
+2025-05-04 10:21:16,261 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4665694864'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4665695200'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4665694528'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:21:16,261 - newsagents - INFO - Агент AINewsSystem - arun - Асинхронний процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:21:16,262 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:21:16,274 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:16,285 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:16,285 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:16,285 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:16,296 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:16,317 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:16,317 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmptr4ld483.db
+2025-05-04 10:21:16,318 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:21:16,318 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:21:16,319 - newsagents - DEBUG - Агент AINewsSystem - run - Запуск процесу збору та обробки новин [started]
+2025-05-04 10:21:16,319 - newsagents.ainews_system - INFO - Запуск синхронного процесу збору та обробки новин
+2025-05-04 10:21:16,319 - newsagents.ainews_system - INFO - Крок 1: Збір новин з RSS
+2025-05-04 10:21:16,319 - newsagents.ainews_system - INFO - Крок 2: Збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:21:16,319 - newsagents.ainews_system - DEBUG - Запит LLM: Останні новини про штучний інтелект
+2025-05-04 10:21:16,622 - newsagents.ainews_system - INFO - Крок 3: Скрапінг 1 веб-сайтів
+2025-05-04 10:21:16,622 - newsagents.ainews_system - INFO - Зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:21:16,622 - newsagents.ainews_system - INFO - Крок 4: Переклад статей
+2025-05-04 10:21:16,622 - newsagents.ainews_system - INFO - Крок 5: Створення коротких описів
+2025-05-04 10:21:16,622 - newsagents.ainews_system - INFO - Крок 6: Аналіз тональності
+2025-05-04 10:21:16,622 - newsagents.ainews_system - INFO - Крок 7: Категоризація статей
+2025-05-04 10:21:16,622 - newsagents - DEBUG - Агент CategorizerAgent - run - Категоризація 2 статей [started]
+2025-05-04 10:21:16,622 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:21:16,825 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:16,825 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:16,825 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:21:16,996 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:16,997 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:16,997 - newsagents - INFO - Агент CategorizerAgent - run - Категоризовано 2 статей за 0.37 секунд [completed]
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:16,997 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:21:16,998 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:16,998 - newsagents.ainews_system - INFO - Процес завершено за 0.68 секунд
+2025-05-04 10:21:16,998 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4665694864'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4665695200'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4665694528'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:21:16,999 - newsagents - INFO - Агент AINewsSystem - run - Процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:21:36,149 - newsagents - INFO - Логування налаштовано. Режим debug: True
+2025-05-04 10:21:36,183 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:36,196 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:36,208 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних test_articles.db
+2025-05-04 10:21:36,208 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:21:36,209 - newsagents.storage_agent - INFO - Збережено 1 нових статей, пропущено 0 існуючих статей
+2025-05-04 10:21:36,221 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:36,222 - newsagents - DEBUG - Агент SummarizerAgent - summarize - Узагальнення тексту (188 символів) [started]
+2025-05-04 10:21:36,222 - newsagents.summarizer_agent - DEBUG - Текст розділено на 1 частин
+2025-05-04 10:21:36,222 - newsagents.summarizer_agent - DEBUG - Обробка частини 1/1
+2025-05-04 10:21:36,224 - newsagents.summarizer_agent - DEBUG - Не вдалося залогувати використання токенів: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:21:36,224 - newsagents - INFO - Агент SummarizerAgent - summarize - Узагальнення успішно виконано [completed]
+2025-05-04 10:21:36,236 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:36,236 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:36,236 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:36,236 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_api - Переклад тексту (16 символів) на uk [started]
+2025-05-04 10:21:36,236 - newsagents - INFO - Агент TranslatorAgent - translate_with_api - Переклад успішно виконано [completed]
+2025-05-04 10:21:36,247 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:36,247 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:36,247 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:36,248 - newsagents - DEBUG - Агент TranslatorAgent - translate_with_llm - Переклад тексту через LLM (28 символів) на uk [started]
+2025-05-04 10:21:36,249 - newsagents.translator_agent - ERROR - Помилка перекладу через LLM: unsupported format string passed to MagicMock.__format__
+2025-05-04 10:21:36,249 - newsagents - ERROR - Агент TranslatorAgent - translate_with_llm - Помилка: unsupported format string passed to MagicMock.__format__ [error]
+2025-05-04 10:21:36,252 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:21:36,263 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:36,274 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:36,274 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:36,274 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:36,285 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:36,306 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:36,307 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpd_sqv59_.db
+2025-05-04 10:21:36,308 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:21:36,308 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:21:36,309 - newsagents - DEBUG - Агент AINewsSystem - arun - Запуск асинхронного процесу збору та обробки новин [started]
+2025-05-04 10:21:36,309 - newsagents.ainews_system - INFO - Запуск асинхронного процесу збору та обробки новин
+2025-05-04 10:21:36,309 - newsagents.ainews_system - INFO - Крок 1: Асинхронний збір новин з RSS
+2025-05-04 10:21:36,309 - newsagents.ainews_system - INFO - Крок 2: Асинхронний збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:21:36,309 - newsagents.ainews_system - DEBUG - Запит LLM 1: Останні новини про штучний інтелект
+2025-05-04 10:21:36,309 - newsagents.ainews_system - INFO - Крок 3: Асинхронний скрапінг 1 веб-сайтів
+2025-05-04 10:21:36,309 - newsagents.ainews_system - DEBUG - Запуск 3 паралельних задач для збору новин
+2025-05-04 10:21:36,547 - newsagents.ainews_system - INFO - Асинхронно зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:21:36,547 - newsagents.ainews_system - INFO - Кроки 4-7: Паралельна обробка статей (переклад, узагальнення, тональність, категоризація)
+2025-05-04 10:21:36,547 - newsagents - DEBUG - Агент CategorizerAgent - arun - Асинхронна категоризація 2 статей [started]
+2025-05-04 10:21:36,547 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:21:36,758 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:36,758 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:36,758 - newsagents - DEBUG - Агент CategorizerAgent - categorize_async - Асинхронна категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:21:36,938 - newsagents.categorizer_agent - ERROR - Помилка при асинхронній категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:36,938 - newsagents - ERROR - Агент CategorizerAgent - categorize_async - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:36,939 - newsagents - INFO - Агент CategorizerAgent - arun - Асинхронно категоризовано 2 статей за 0.39 секунд [completed]
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:36,939 - newsagents.ainews_system - INFO - Асинхронний процес завершено за 0.63 секунд
+2025-05-04 10:21:36,944 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4412807488'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4412806480'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4412806816'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:21:36,945 - newsagents - INFO - Агент AINewsSystem - arun - Асинхронний процес завершено, оброблено 2 статей [completed]
+2025-05-04 10:21:36,951 - newsagents.ainews_system - INFO - Ініціалізація агентів NewsAgents
+2025-05-04 10:21:36,962 - newsagents.crawler_agent - INFO - CrawlerAgent ініціалізовано з 1 RSS-каналами
+2025-05-04 10:21:36,973 - newsagents.translator_agent - INFO - TranslatorAgent ініціалізовано
+2025-05-04 10:21:36,973 - newsagents.translator_agent - DEBUG - Налаштовано зовнішнє API для перекладу
+2025-05-04 10:21:36,973 - newsagents.translator_agent - DEBUG - Налаштовано переклад через OpenAI
+2025-05-04 10:21:36,984 - newsagents.summarizer_agent - INFO - SummarizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:37,006 - newsagents.categorizer_agent - INFO - CategorizerAgent ініціалізовано з OpenAI API
+2025-05-04 10:21:37,007 - newsagents.storage_agent - DEBUG - Створено нове з'єднання з базою даних /var/folders/z0/ms7_9xrn115bv2dgb_x531kh0000gn/T/tmpty948ou3.db
+2025-05-04 10:21:37,008 - newsagents.storage_agent - INFO - Схема таблиці оновлена успішно
+2025-05-04 10:21:37,008 - newsagents.ainews_system - INFO - AINewsSystem ініціалізовано: 1 RSS-каналів, 1 сайтів для скрапінгу, 2 категорій, 1 платформ виводу
+2025-05-04 10:21:37,009 - newsagents - DEBUG - Агент AINewsSystem - run - Запуск процесу збору та обробки новин [started]
+2025-05-04 10:21:37,009 - newsagents.ainews_system - INFO - Запуск синхронного процесу збору та обробки новин
+2025-05-04 10:21:37,009 - newsagents.ainews_system - INFO - Крок 1: Збір новин з RSS
+2025-05-04 10:21:37,009 - newsagents.ainews_system - INFO - Крок 2: Збір новин через LLM за запитами (1 запитів)
+2025-05-04 10:21:37,009 - newsagents.ainews_system - DEBUG - Запит LLM: Останні новини про штучний інтелект
+2025-05-04 10:21:37,213 - newsagents.ainews_system - INFO - Крок 3: Скрапінг 1 веб-сайтів
+2025-05-04 10:21:37,213 - newsagents.ainews_system - INFO - Зібрано загалом 2 статей (RSS: 2, LLM: 0, Скрапінг: 0)
+2025-05-04 10:21:37,213 - newsagents.ainews_system - INFO - Крок 4: Переклад статей
+2025-05-04 10:21:37,213 - newsagents.ainews_system - INFO - Крок 5: Створення коротких описів
+2025-05-04 10:21:37,214 - newsagents.ainews_system - INFO - Крок 6: Аналіз тональності
+2025-05-04 10:21:37,214 - newsagents.ainews_system - INFO - Крок 7: Категоризація статей
+2025-05-04 10:21:37,214 - newsagents - DEBUG - Агент CategorizerAgent - run - Категоризація 2 статей [started]
+2025-05-04 10:21:37,214 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про ШІ... [started]
+2025-05-04 10:21:37,423 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:37,423 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:37,424 - newsagents - DEBUG - Агент CategorizerAgent - categorize - Категоризація статті: Тестові новини про науку про дані... [started]
+2025-05-04 10:21:37,594 - newsagents.categorizer_agent - ERROR - Помилка при категоризації: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-05-04 10:21:37,594 - newsagents - ERROR - Агент CategorizerAgent - categorize - Помилка: Error code: 401 - {'error': {'message': 'Incorrect API key provided: fake-api************ting. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}} [error]
+2025-05-04 10:21:37,594 - newsagents - INFO - Агент CategorizerAgent - run - Категоризовано 2 статей за 0.38 секунд [completed]
+2025-05-04 10:21:37,594 - newsagents.ainews_system - INFO - Крок 8: Збереження статей у базу даних
+2025-05-04 10:21:37,594 - newsagents.ainews_system - INFO - Вивід на консоль:
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO - - Тестові новини про ШІ (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про ШІ.
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO - - Тестові новини про науку про дані (Категорія: Інше, Тональність: нейтральна)
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO -   Короткий опис: Короткий огляд новин про аналітику даних.
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO - ---
+2025-05-04 10:21:37,595 - newsagents.ainews_system - INFO - Процес завершено за 0.59 секунд
+2025-05-04 10:21:37,595 - newsagents - INFO - Загальне використання токенів: Запит: <MagicMock name='ChatOpenAI().invoke().usage.prompt_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4412807488'>, Відповідь: <MagicMock name='ChatOpenAI().invoke().usage.completion_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4412806480'>, Всього: <MagicMock name='ChatOpenAI().invoke().usage.total_tokens.__radd__().__iadd__().__iadd__().__iadd__()' id='4412806816'>, Орієнтовна вартість: $1.0000
+2025-05-04 10:21:37,595 - newsagents - INFO - Агент AINewsSystem - run - Процес завершено, оброблено 2 статей [completed]

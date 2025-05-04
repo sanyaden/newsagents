@@ -6,4 +6,8 @@ requests>=2.31.0
 python-dotenv>=1.0.0
 aiohttp>=3.11.18
 beautifulsoup4>=4.12.2
+<<<<<<< HEAD
 tavily-python>=0.7.1 
+=======
+tavily-python>=0.7.1
+>>>>>>> 7d55303ed79d51b45c5e89094c4ec26084f3c0a8

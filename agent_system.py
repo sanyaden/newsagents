@@ -420,6 +420,7 @@ class StorageTool(BaseTool):
             
             return f"Збережено {new_count} нових статей, пропущено {skipped_count} існуючих статей."
         except Exception as e:
+<<<<<<< HEAD
             return f"Помилка при збереженні статей: {str(e)}"
 
 class HTMLReportTool(BaseTool):
@@ -825,3 +826,6 @@ if __name__ == "__main__":
     agent = NewsAgent(config)
     result = agent.run("Збери та опрацюй новини за останній тиждень, створи HTML-звіт")
     print(result["output"]) 
+=======
+            return f"Помилка при збереженні статей: {str(e)}"
+>>>>>>> 7d55303ed79d51b45c5e89094c4ec26084f3c0a8
